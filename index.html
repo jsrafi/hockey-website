@@ -3,9 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Hockey's</title>
+
+    <!-- manroop-font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    .manrope
+    {
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
 </head>
-<body>
-    
+<body class="manrope">
+    <header class="container mx-auto mt-7">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-bold">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl">Hockey<span class="text-[#FF4240]">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg font-bold">
+                      <li class="text-[#FF4240]"><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-1 lg:gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      
+                  <a class="btn text-white bg-[#FF4240] lg:px-7">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <div class="py-5  ">
+            <div class="carousel w-full relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full lg:h-[600px]" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full lg:h-[600px]" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+              </div>
+              <div class="bg-black rounded-lg lg:w-2/5 p-7 lg:relative lg:bottom-52 lg:float-end lg:mr-10  ">
+                <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class="text-white opacity-80 text-base font-extralight">A heart-warming, intergenerational story about an awkward young boy who finds his hockey chutzpah at a PeeWee tournament.</p>
+              </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+        <section class="py-20">
+        <div class="flex flex-col items-center gap-5 border-t-4 border-b-4 border-dotted  p-10">
+             <h1 class="text-2xl lg:text-4xl font-extrabold text-center ">Professional Hockeys Club</h1>
+             <p class="text-base text-[#13131899] font-base w-7/12 text-center">"In hockey, there is a tradition: win or lose, you rise to the challenge …. the story has an ingenuous wisdom. A fine look into hockey’s heart.” - Kirkus Reviews 
+            </p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-0 lg:gap-5">
+            <div class="card  bg-base-100 py-10 flex items-center text-center">
+                <div class="radial-progress text-error lg:w-6/12 lg:h-36" style="--value:87;" role="progressbar"><span class="text-black font-bold text-2xl ">87%</span></div>
+                <div class="card-body py-10">
+                  <h2 class="text-2xl font-bold">Prayer Facility</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="card  bg-base-100 py-10 flex items-center text-center">
+                <div class="radial-progress text-[#49D293] lg:w-6/12 lg:h-36" style="--value:95;" role="progressbar"><span class="text-black font-bold text-2xl ">95%</span></div>
+                <div class="card-body py-10">
+                  <h2 class="text-2xl font-bold">Experienced Coach</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="card  bg-base-100 py-10 flex items-center text-center">
+                <div class="radial-progress text-[#FFB546] lg:w-6/12 lg:h-36" style="--value:90;" role="progressbar"><span class="text-black font-bold text-2xl ">90%</span></div>
+                <div class="card-body py-10">
+                  <h2 class="text-2xl font-bold">Senior Player</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 py-10 flex items-center text-center">
+                <div class="radial-progress text-info lg:w-6/12 lg:h-36" style="--value:80;" role="progressbar"><span class="text-black font-bold text-2xl ">80%</span></div>
+                <div class="card-body py-10">
+                  <h2 class="text-2xl font-bold">Training Ground</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="flex flex-col items-center gap-5 border-t-4 border-b-4 border-dotted  p-10">
+             <h1 class="text-2xl lg:text-4xl font-extrabold ">Program Sections</h1>
+             <p class="text-base text-[#13131899] font-base w-7/12 text-center">ZACHARY HYMAN is a Canadian professional hockey player with the Toronto Maple Leafs. He is the author of Hockey Hero and The Bambino.
+            </p>
+        </div>
+        <div class="flex flex-col  gap-5">
+            <div class="flex flex-col lg:flex-row gap-5  pt-12">
+            <div class="hero h-[338px]  lg:flex-1 rounded-xl overflow-hidden " style=" background-image: url(Images/2.png );">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content lg:pt-20 lg:pr-20 text-start text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-3xl font-extrabold">Junior Program</h1>
+                    <p class="mb-5 text-base font-medium">Our Hockey's junior program provides opportunities for players ages 12-to-17 to hone and enhance their skills and is an important part of the organization's overall efforts related to player development. </p>
+                    <button class="btn bg-[#FF4240] text-white px-7">Register Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="hero h-[338px]  lg:flex-1 rounded-xl overflow-hidden " style=" background-image: url(Images/3.png );">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content lg:pt-20 lg:pr-20 text-start text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-3xl font-extrabold">Teenager Program</h1>
+                    <p class="mb-5 text-base font-medium">Our Hockey's junior program provides opportunities for players ages 18-to-22 to hone and enhance their skills and is an important part of the organization's overall efforts related to player development. </p>
+                    <button class="btn bg-[#FF4240] text-white px-7">Register Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero h-[338px] lg:h-[450px]   rounded-xl overflow-hidden " style=" background-image: url(Images/4.png );">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content lg:pt-36 lg:pr-[700px] text-start text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-3xl font-extrabold">Professional Program</h1>
+                    <p class="mb-5 text-base font-medium">Our Hockey's junior program provides opportunities for players ages 23+ to hone and enhance their skills and is an important part of the organization's overall efforts related to player development. </p>
+                    <button class="btn bg-[#FF4240] text-white px-7">Register Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </section>
+        <section class="py-20">
+            <div class="flex flex-col items-center gap-5 border-t-4 border-b-4 border-dotted  p-10">
+                 <h1 class="text-2xl lg:text-4xl font-extrabold ">Our New Products</h1>
+                 <p class="text-base text-[#13131899] font-base w-7/12 text-center">Introducing our newest product! Get ready for the ultimate solution to your Problem. Available now at Hockey's.
+                </p>
+            </div>
+            <div class="pt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="card card-side bg-base-100 shadow-xl h-52 border-2 ">
+                    <figure><img class="p-4" src="Images/5.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+                             <p>5.0</p> 
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                               <p>20</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                              <p>200</p>
+                              
+                        </div>
+                      <h2 class=" text-xl font-extrabold">Hockey's Jacket</h2>
+                      
+                      <p>white and red combination . best for winter</p>
+                      <div class="flex ">
+                      <p class="text-red-600 font-bold"> price-22$</p>
+                      <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      <p>Delivery fee: free</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl h-52 border-2 ">
+                    <figure><img class="p-4" src="Images/6.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+                             <p>5.0</p> 
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                               <p>20</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                              <p>200</p>
+                              
+                        </div>
+                      <h2 class=" text-xl font-extrabold">Hockey's Balle-ball</h2>
+                      
+                      <p>Buy the best balle-ball & keep yourself warm</p>
+                      <div class="flex ">
+                      <p class="text-red-600 font-bold"> price-22$</p>
+                      <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      <p>Delivery fee: free</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl h-52 border-2 ">
+                    <figure><img class="p-4" src="Images/7.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+                             <p>5.0</p> 
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                               <p>20</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                              <p>200</p>
+                              
+                        </div>
+                      <h2 class=" text-xl font-extrabold">Hockey's Cap</h2>
+                      
+                      <p>Stylish and handsome in Yellow for you to wear.</p>
+                      <div class="flex ">
+                      <p class="text-red-600 font-bold"> price-22$</p>
+                      <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      <p>Delivery fee: free</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl h-52 border-2 ">
+                    <figure><img class="p-4" src="Images/8.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+                             <p>5.0</p> 
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                               <p>20</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                              <p>200</p>
+                              
+                        </div>
+                      <h2 class=" text-xl font-extrabold">Hockey's T-shiet</h2>
+                      
+                      <p>Best T-shirt for you to play any game.</p>
+                      <div class="flex ">
+                      <p class="text-red-600 font-bold"> price-22$</p>
+                      <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      <p>Delivery fee: free</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl h-52 border-2 ">
+                    <figure><img class="p-4" src="Images/9.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+                             <p>5.0</p> 
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                               <p>20</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                              <p>200</p>
+                              
+                        </div>
+                      <h2 class=" text-xl font-extrabold">Helmet</h2>
+                      
+                      <p>before destroy your head buy the best helmet.</p>
+                      <div class="flex ">
+                      <p class="text-red-600 font-bold"> price-22$</p>
+                      <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      <p>Delivery fee: free</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl h-52 border-2 ">
+                    <figure><img class="p-4" src="Images/10.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+                             <p>5.0</p> 
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                               <p>20</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                              <p>200</p>
+                              
+                        </div>
+                      <h2 class=" text-xl font-extrabold">Football</h2>
+                      
+                      <p>football is the best game for winter . so buy it.</p>
+                      <div class="flex ">
+                      <p class="text-red-600 font-bold"> price-22$</p>
+                      <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      <p>Delivery fee: free</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  
+            </div>
+            </section>
+    </main>
 </body>
 </html>
